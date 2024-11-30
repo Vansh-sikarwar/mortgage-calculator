@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>body{
+      background-color: aliceblue;
+    }</style>
+  </head>
+  <body>
+     <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="#">Mortgage Calculator</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="first.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="second.html">Introduction</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="third.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav><br><br>
+    <h1>Introduction to Mortgage Calculator</h1>
+    <p>Mortgage calculators are automated tools that enable users to determine the financial implications of changes in one or more variables in a mortgage financing arrangement. Mortgage calculators are used by consumers to determine monthly repayments, and by mortgage providers to determine the financial suitability of a home loan applicant.[2] Mortgage calculators are frequently on for-profit websites, though the Consumer Financial Protection Bureau has launched its own public mortgage calculator.[3]: 1267, 1281–83 
+
+        The major variables in a mortgage calculation include loan principal, balance, periodic compound interest rate, number of payments per year, total number of payments and the regular payment amount. More complex calculators can take into account other costs associated with a mortgage, such as local and state taxes, and insurance.
+        
+        Mortgage calculation capabilities can be found on financial handheld calculators such as the HP-12C or Texas Instruments TI BA II Plus. There are also multiple free online free mortgage calculators, and software programs offering financial and mortgage calculations.</p><hr><br>
+        <h3>uses</h3>
+        <p>When purchasing a new home, most buyers choose to finance a portion of the purchase price via the use of a mortgage. Prior to the wide availability of mortgage calculators, those wishing to understand the financial implications of changes to the five main variables in a mortgage transaction were forced to use compound interest rate tables. These tables generally required a working understanding of compound interest mathematics for proper use. In contrast, mortgage calculators make answers to questions regarding the impact of changes in mortgage variables available to everyone.
+
+            Mortgage calculators can be used to answer such questions as:
+            
+            If one borrows $250,000 at a 7% annual interest rate and pays the loan back over thirty years, with $3,000 annual property tax payment, $1,500 annual property insurance cost and 0.5% annual private mortgage insurance payment, what will the monthly payment be? The answer is $2,142.42.
+            
+            A potential borrower can use an online mortgage calculator to see how much property he or she can afford. A lender will compare the person's total monthly income and total monthly debt load. A mortgage calculator can help to add up all income sources and compare this to all monthly debt payments.[citation needed] It can also factor in a potential mortgage payment and other associated housing costs (property taxes, homeownership dues, etc.). One can test different loan sizes and interest rates. Generally speaking, lenders do not like to see all of a borrower's debt payments (including property expenses) exceed around 40% of total monthly pretax income. Some mortgage lenders are known to allow as high as 55%.</p><hr><br>
+            <h3>Monthly Payment Formula</h3>
+            <p>The fixed monthly payment for a fixed rate mortgage is the amount paid by the borrower every month that ensures that the loan is paid off in full with interest at the end of its term. The monthly payment formula is based on the annuity formula. The monthly payment c depends upon:
+
+                r - the monthly interest rate. Since the quoted yearly percentage rate is not a compounded rate, the monthly percentage rate is simply the yearly percentage rate divided by 12. <br><br> For example, if the yearly percentage rate was 6% (i.e. 0.06), then r would be 
+                0.06
+                /
+                12
+                {\displaystyle 0.06/12} or 0.5% (i.e. 0.005).<br>
+                N - the number of monthly payments, called the loan's term, and<br>
+                P - the amount borrowed, known as the loan's principal.
+                In the standardized calculations used in the United States,<br> c is given by the formula:[4]<br>
+                
+                c
+                =
+                {
+                r
+                P
+                1
+                −
+                (
+                1
+                +
+                r
+                )
+                −
+                N
+                =
+                r
+                P
+                (
+                1
+                +
+                r
+                )
+                N
+                (
+                1
+                +
+                r
+                )
+                N
+                −
+                1
+                ,
+                r
+                ≠
+                0
+                ;
+                P
+                N
+                ,
+                r
+                =
+                0.<br>
+                {\displaystyle c={\begin{cases}{\frac {rP}{1-(1+r)^{-N}}}={\frac {rP(1+r)^{N}}{(1+r)^{N}-1}},&r\neq 0;\\{\frac {P}{N}},&r=0.\end{cases}}}
+                <br><br>For example, for a home loan of $200,000 with a fixed yearly interest rate of 6.5% for 30 years, <br>the principal is 
+                P
+                =
+                200000
+                {\displaystyle P=200000}, <br>the monthly interest rate is 
+                r
+                =
+                0.065
+                /
+                12
+                {\displaystyle r=0.065/12},<br> the number of monthly payments is 
+                N
+                =
+                30
+                ⋅
+                12
+                =
+                360
+                {\displaystyle N=30\cdot 12=360}, the fixed monthly payment equals $1,264.14. This formula is provided using the financial function PMT in a spreadsheet such as Excel. In the example, the monthly payment is obtained by entering either of these formulas:
+                
+                = -PMT(6.5 / 100 / 12, 30 * 12, 200000)
+                = ((6.5 / 100 / 12) * 200000) / (1 - ((1 + (6.5 / 100 / 12)) ^ (-30 * 12)))
+                = 1264.14
+                The following derivation of this formula illustrates how fixed-rate mortgage loans work. The amount owed on the loan at the end of every month equals the amount owed from the previous month, plus the interest on this amount, minus the fixed amount paid every month. This fact results in the debt schedule:
+                
+                </p><hr><br>
+                <h3>Adjustable Interest rates</h3>
+                <p>While adjustable-rate mortgages have been around for decades,[5] from 2002 through 2005 adjustable-rate mortgages became more complicated as did the calculations involved.[6] Lending became much more creative which complicated the calculations. Subprime lending and creative loans such as the “pick a payment”,[7] “pay option”,[8] and “hybrid” loans brought on a new era of mortgage calculations. The more creative adjustable mortgages meant some changes in the calculations to specifically handle these complicated loans. To calculate the annual percentage rates (APR) many more variables needed to be added, including: the starting interest rate; the length of time at that rate; the recast; the payment change; the index; the margins; the periodic interest change cap; the payment cap; lifetime cap; the negative amortization cap; and others.[9] Many lenders created their own software programs, and World Savings even had contracted special calculators to be made by Calculated Industries specifically for their “pick a payment” program.[10] However, by the late 2000s the Great Recession brought an end to many of the creative “pick-a-payment” type of loans which left many borrowers with higher loan balances over time, and owing more than their houses were worth.[11] This also helped reduce the more complicated calculations that went along with these mortgages.</p><hr><br>
+                <h3>Total interest paid formula</h3>
+                <p>The total amount of interest 
+                    I
+                    {\displaystyle I} that will be paid over the lifetime of the loan is the difference of the total payment amount (
+                    c
+                    N
+                    {\displaystyle cN}) and the loan principal (
+                    P
+                    {\displaystyle P}): <br><br>
+                    
+                    I
+                    =
+                    c
+                    N
+                    −
+                    P
+                    {\displaystyle I=cN-P} <br> <br>
+                    where 
+                    c
+                    {\displaystyle c} is the fixed monthly payment, 
+                    N
+                    {\displaystyle N} is the number of payments that will be made, and 
+                    P
+                    {\displaystyle P} is the initial principal balance on the loan <br>
+                    
+                    The cumulative interest paid at the end of any period N can be calculated by:  <br> <br>
+                    
+                    (
+                    P
+                    r
+                    −
+                    c
+                    )
+                    (
+                    (
+                    1
+                    +
+                    r
+                    )
+                    N
+                    −
+                    1
+                    )
+                    r
+                    +
+                    c
+                    N
+                    {\displaystyle (Pr-c){\frac {((1+r)^{N}-1)}{r}}+cN}</p>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
